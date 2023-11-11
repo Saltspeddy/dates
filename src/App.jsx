@@ -53,7 +53,7 @@ function App() {
         activitati.forEach((activitate) => {
           console.log(activitate.activitate);
           document.querySelector("#activitatiDragos").innerHTML +=
-            ' <div class="w-[100%] bg-[#92B4F4] p-4 rounded-3xl mb-2">' +
+            ' <div class="w-[100%] bg-[#EA86B8] p-4 rounded-3xl mb-2">' +
             activitate.activitate +
             "</div>";
         });
@@ -69,6 +69,7 @@ function App() {
         activitate: addMiri.activitateM.value,
       }).then(() => addMiri.reset());
     });
+
     const addDragos = document.querySelector("#addDragos");
     addDragos.addEventListener("submit", (e) => {
       e.preventDefault();
